@@ -1,0 +1,157 @@
+{
+	"info": {
+		"_postman_id": "8924b3d9-e9cd-461d-b3f5-731fec36f246",
+		"name": "Tugas Darren Hansen",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "49280617",
+		"_collection_link": "https://darrenhansen-3726276.postman.co/workspace/Hansen's-Workspace~0ae9e341-e043-4d48-8d2d-9ec0894766ae/collection/49280617-8924b3d9-e9cd-461d-b3f5-731fec36f246?action=share&source=collection_link&creator=49280617"
+	},
+	"item": [
+		{
+			"name": "Create",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"topic\" : \"IPA\",\r\n    \"summary\": \"IPA adalah cabang ilmu yang mempelajari tentang alam dan fenomena-fenomena di dalamnya secara sistematis dan ilmiah. IPA mencakup berbagai bidang seperti fisika, kimia, biologi, dan ilmu bumi.\",\r\n    \"learningDate\" : \"3-10-2025\"\r\n}\r\n\r\n\r\n\r\n\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/belajar",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"belajar"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Read",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"topic\" : \"IPA\",\r\n    \"summary\": \"IPA adalah cabang ilmu yang mempelajari tentang alam dan fenomena-fenomena di dalamnya secara sistematis dan ilmiah. IPA mencakup berbagai bidang seperti fisika, kimia, biologi, dan ilmu bumi.\",\r\n    \"learningDate\" : \"3-10-2025\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/belajar/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"belajar",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"topic\" : \"Raja Iblis\",\r\n    \"summary\": \"Raja Iblis adalah sosok pemimpin atau penguasa tertinggi dari makhluk iblis atau setan dalam berbagai cerita fantasi, mitologi, atau kepercayaan. Dia biasanya digambarkan sebagai entitas yang sangat kuat, jahat, dan memiliki kekuasaan besar atas kegelapan atau dunia bawah.\",\r\n    \"learningDate\" : \"7-10-2025\"\r\n}\r\n\r\n\r\n\r\n\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/belajar/68f7a0c1d86bece1b2ea4ac8",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"belajar",
+						"68f7a0c1d86bece1b2ea4ac8"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "\r\n\r\n\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/belajar/68f7a0c1d86bece1b2ea4ac8",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"belajar",
+						"68f7a0c1d86bece1b2ea4ac8"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

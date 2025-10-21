@@ -1,5 +1,5 @@
 import express from "express";
-import * as belajarController from "../controllers/belajarControllers.js";
+import * as belajarController from "../controllers/belajarController.js";
 
 const api = express.Router();
 
